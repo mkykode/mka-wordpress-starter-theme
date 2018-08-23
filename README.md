@@ -3,12 +3,14 @@
 
 Gutenberg Starter theme based on underscores setup with Timber for templating and webpack.
 
+Theme requires wordpress local development envionment, [Node](https://nodejs.org/), and [Yarn](https://yarnpkg.com/). It comes with a configured lando.yml, if you would like to use [Lando](https://github.com/lando/lando/releases).
+
 
 Getting Started
 ---------------
 
-1. Do a Final All Search and Replace 'monkey' with the new theme name.
-2. If you don;t have yarn installed, install it with npm -i -g yarn
+1. Find all occurrences of 'monkey' and replace them with the new theme name.
+2. If you don't have yarn installed, install it globally with npm -i -g yarn
 3. Run yarn.
 4. Run yarn dev or yarn watch.
 
