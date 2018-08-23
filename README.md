@@ -15,5 +15,5 @@ Getting Started
 4. Run yarn dev or yarn watch.
 
 
-With love from[Monkey Kode Agency](http://www.monkeykodeagency.com).
+With ❤ from [Monkey Kode Agency](http://www.monkeykodeagency.com).
 
