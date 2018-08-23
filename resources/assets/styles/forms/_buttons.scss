@@ -1,7 +1,27 @@
+%button {
+  background: $highlight;
+  border: none;
+  border-radius: 4px;
+  box-shadow: none;
+  color: $white;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  -webkit-appearance: none;
+
+  &:hover {
+    background-color: darken($highlight, 10%);
+    color: $white;
+    text-decoration: none;
+  }
+}
+
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   border: 1px solid;
   border-color: $color__border-button;
   border-radius: 3px;
@@ -20,5 +40,14 @@ input[type="submit"] {
   &:active,
   &:focus {
     border-color: $color__border-button-focus;
+  }
+}
+
+.wp-block-button {
+  margin-bottom: $base-margin;
+  text-align: center;
+
+  .wp-block-button__link {
+    @extend %button;
   }
 }

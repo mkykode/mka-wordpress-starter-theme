@@ -1,3 +1,23 @@
+.alignfull {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: auto;
+  max-width: 1000%;
+}
+
+.alignwide {
+  margin-left: calc(25% - 25vw);
+  margin-right: calc(25% - 25vw);
+  width: auto;
+  max-width: 1000%;
+}
+
+.alignwide img,
+.alignfull img {
+  display: block;
+  margin: 0 auto;
+}
+
 .entry-content > * {
   margin: 36px auto;
   max-width: $size__site-content;
@@ -161,4 +181,57 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .has-very-dark-gray-background-color {
   background-color: #444;
+}
+
+p {
+  @extend %base-style;
+}
+
+.editor-block-list__block {
+  max-width: $grid-max-width;
+}
+
+.wp-block-freeform.blocks-rich-text__tinymce {
+  blockquote,
+  .wp-block-quote:not(.is-large) {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  @include button-styles;
+}
+
+blockquote {
+  background: transparent;
+  margin: 0 0 $base-margin;
+  @include font-sizes(18px, 19px, 22px);
+  font-style: italic;
+  padding: 0;
+  text-align: center;
+
+  cite {
+    display: block;
+    font-size: 18px;
+    margin-top: 17px;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &.is-large.wp-block-quote {
+    @include font-sizes(22px, 26px, 32px);
+    margin: 0 0 $base-margin;
+    padding: 0;
+
+    cite {
+      text-align: center;
+    }
+  }
+
+  &.wp-block-pullquote {
+    border-top: 2px solid $base-color;
+    border-bottom: 2px solid $base-color;
+    padding: $base-margin 0;
+  }
 }
